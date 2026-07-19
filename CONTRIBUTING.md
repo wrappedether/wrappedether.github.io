@@ -78,7 +78,7 @@ vercel --prod
 
 Read these docs:
 - [README.md](README.md) - Project overview
-- [.claude/instructions.md](.claude/instructions.md) - Technical guidelines (for AI assistants, but useful for humans too)
+- [AGENTS.md](AGENTS.md) - Build commands, code style, and project boundaries (written for AI coding agents, but the conventions apply to everyone)
 
 ### 2. Making Changes
 
@@ -174,8 +174,10 @@ Read these docs:
 ├── public/
 │   ├── images/               # Static images
 │   └── og-image.png          # Open Graph image
-├── .claude/
-│   └── instructions.md       # AI agent instructions
+├── .github/
+│   ├── copilot-instructions.md # Copilot-specific conventions
+│   └── dependabot.yml        # Dependency updates (7-day cooldown)
+├── AGENTS.md                 # Cross-tool agent instructions (agents.md standard)
 ├── README.md                 # Project docs
 ├── CONTRIBUTING.md           # This file
 └── package.json              # Dependencies
@@ -401,7 +403,7 @@ When Next.js migration is complete:
 
 **Documentation:**
 - [README.md](README.md) - Project overview
-- [.claude/instructions.md](.claude/instructions.md) - Technical details
+- [AGENTS.md](AGENTS.md) - Build commands, code style, and project boundaries
 
 **External Resources:**
 - ETCswap: https://etcswap.org
