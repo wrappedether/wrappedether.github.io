@@ -51,17 +51,19 @@
 ### Runtime & Tools
 | Tool | Version | Purpose |
 |------|---------|---------|
-| Node.js | 22.x LTS | Runtime (native fetch, ESM) |
-| pnpm | 9.x | Package manager |
+| Node.js | 24.x LTS | Runtime (native fetch, ESM) |
+| pnpm | 10.x | Package manager |
 
 ### Framework & Libraries
 | Library | Version | Purpose |
 |---------|---------|---------|
-| Next.js | 15.1.x | React framework, App Router |
+| Next.js | 16.x | React framework, App Router |
 | React | 19.x | Component UI |
-| TypeScript | 5.7.x | Type safety |
-| Tailwind CSS | 4.0.x | Styling (Oxide engine) |
-| Framer Motion | 11.15.x | SVG animations |
+| TypeScript | 5.x | Type safety |
+| Tailwind CSS | 4.x | Styling (Oxide engine) |
+| Framer Motion | 12.x | SVG animations |
+
+Exact pinned versions live in `package.json` — that is the source of truth.
 
 ### Deployment
 | Service | Purpose |
@@ -105,8 +107,8 @@ wrappedether-site/
 
 ### Prerequisites
 ```bash
-node --version  # Should be 22.x
-pnpm --version  # Should be 9.x
+node --version  # 24.x or newer (enforced via engines.node)
+pnpm --version  # 10.x
 ```
 
 ### Development
@@ -251,12 +253,18 @@ http://creativecommons.org/licenses/by-sa/3.0/
 ## Contributing
 
 1. Fork the repository
-2. Create feature branch (`git checkout -b feature/improvement`)
+2. Create a feature branch (`git checkout -b feature/improvement`)
 3. Make changes
-4. Test locally (`pnpm dev`)
-5. Submit PR
+4. Validate locally — all three must pass:
+   ```bash
+   pnpm lint && pnpm type-check && pnpm build
+   ```
+5. Submit a PR
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
+Conventions, boundaries, and the things this site deliberately does **not**
+do (no wallet connection, no in-app wrapping) are in
+[AGENTS.md](AGENTS.md) — written for AI coding agents, but they apply to
+everyone.
 
 ---
 
