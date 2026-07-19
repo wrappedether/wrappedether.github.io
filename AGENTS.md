@@ -43,9 +43,12 @@ No `pnpm test` script exists in this repo.
 
 ## Tech Stack (actual)
 
-- Next.js 16.2.6 (App Router), React 19.2.3, TypeScript 5.x (strict)
-- Tailwind CSS 4.x, Framer Motion ^12.27.1
+- Next.js 16.x (App Router), React 19.x, TypeScript 5.x (strict)
+- Tailwind CSS 4.x, Framer Motion 12.x
 - pnpm, single-package workspace
+
+Exact versions live in `package.json`. Read them there rather than trusting
+any number written into prose — including this file.
 
 ---
 

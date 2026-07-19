@@ -24,9 +24,11 @@ If unsure, verify at https://endoflife.date
 
 ## Tech Stack (actual, from package.json)
 
-- Next.js 16.2.6 (App Router), React 19.2.3, TypeScript 5.x
-- Tailwind CSS 4.x, Framer Motion ^12.27.1
+- Next.js 16.x (App Router), React 19.x, TypeScript 5.x
+- Tailwind CSS 4.x, Framer Motion 12.x
 - pnpm, single-package workspace
+
+Exact versions live in `package.json` — read them there, not from this file.
 
 ## Commands
 
