@@ -22,10 +22,27 @@
 
 # misc
 .DS_Store
+
+# secrets & credentials
 *.pem
 *.key
+*.p12
+*.pfx
 credentials.json
+service-account.json
+secrets/
+
+# crypto / wallet material
 keystore/
+*.keystore
+wallet.json
+mnemonic.txt
+
+# ssh keys
+id_rsa
+id_rsa.pub
+id_ed25519
+id_ed25519.pub
 
 # debug
 npm-debug.log*
