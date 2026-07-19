@@ -204,9 +204,8 @@ This site is inspired by [WETH.io](https://web.archive.org/web/20240320002559/ht
 
 | Document | Description |
 |----------|-------------|
-| [V0.2-PLAN.md](docs/V0.2-PLAN.md) | Full development roadmap |
-| [ANIMATION-GUIDE.md](docs/ANIMATION-GUIDE.md) | SVG + Framer Motion workflow |
-| [WETH-IO-ANALYSIS.md](docs/WETH-IO-ANALYSIS.md) | Visual design analysis |
+| [ANIMATION-GUIDE.md](docs/ANIMATION-GUIDE.md) | SVG + Framer Motion workflow for the five custom animations |
+| [WETH-IO-ANALYSIS.md](docs/WETH-IO-ANALYSIS.md) | Visual design analysis behind the WETH.io attribution |
 
 ---
 
